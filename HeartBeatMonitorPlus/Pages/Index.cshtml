@@ -1,0 +1,28 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Heart-Beat Monitor Plus";
+}
+    <div class="container">
+        <div class="row">&nbsp;</div>
+        <div>
+            <canvas id="firstHeartBeatChart"></canvas>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div>
+            <canvas id="secondHeartBeatChart"></canvas>
+        </div>
+        <div class="row">&nbsp;</div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <ul id="messagesList"></ul>
+        </div>
+    </div>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src="~/js/heartBeat.js"></script>
